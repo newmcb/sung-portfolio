@@ -30,7 +30,7 @@ export default function ContactPage() {
         href="mailto:your.email@example.com"
         className="text-sky-400 text-lg underline hover:text-sky-300"
       >
-        your.email@example.com
+        newmcb@naver.com
       </motion.a>
     </main>
   );
