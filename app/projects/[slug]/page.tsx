@@ -60,7 +60,7 @@ export default function ProjectDetailPage() {
 
       {project.reason && (
         <Section icon="💡" title="만든 이유">
-          <p className="text-sm leading-relaxed">{project.reason}</p>
+          <p className="text-sm leading-relaxed whitespace-pre-line">{project.reason}</p>
         </Section>
       )}
 
@@ -106,7 +106,7 @@ export default function ProjectDetailPage() {
 
       {project.learned && (
         <Section icon="📘" title="배운 점">
-          <p className="text-sm leading-relaxed">{project.learned}</p>
+          <p className="text-sm leading-relaxed whitespace-pre-line">{project.learned}</p>
         </Section>
       )}
 

@@ -23,10 +23,10 @@ export default function HomePage() {
   return (
     <main className="h-screen flex flex-col justify-center items-center text-center px-4">
       <motion.h1
-        initial={{ opacity: 0, y: -30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="text-5xl font-bold mb-4"
+        initial={{opacity: 0, y: -30}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 0.6}}
+        className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4"
       >
         프론트엔드 개발자 성경진
       </motion.h1>
@@ -35,29 +35,16 @@ export default function HomePage() {
         <AnimatePresence mode="wait">
           <motion.p
             key={index}
-            initial={{ opacity: 0, y: 10 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -10 }}
-            transition={{ duration: 0.5 }}
+            initial={{opacity: 0, y: 10}}
+            animate={{opacity: 1, y: 0}}
+            exit={{opacity: 0, y: -10}}
+            transition={{duration: 0.5}}
             className="text-gray-400 text-lg"
           >
             {phrases[index]}
           </motion.p>
         </AnimatePresence>
       </div>
-
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1, delay: 0.4 }}
-      >
-        {/*<Link*/}
-        {/*  href="/projects"*/}
-        {/*  className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg text-lg font-medium"*/}
-        {/*>*/}
-        {/*  View Projects*/}
-        {/*</Link>*/}
-      </motion.div>
 
       <motion.div
         initial={{ opacity: 0 }}

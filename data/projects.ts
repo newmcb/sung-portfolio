@@ -34,5 +34,29 @@ export const projects: Project[] = [
     demo: "https://life-sync-khaki.vercel.app/",
     repo: "https://github.com/newmcb/life-sync",
     type: "Side Project"
+  },
+  {
+    slug: "portfolio",
+    title: "Sung Portfolio",
+    description: "프론트엔드 개발자 성경진입니다",
+    details: [
+      "Framer Motion을 사용해 페이지 전환 및 요소 애니메이션 구현",
+      "다크 모드 지원 및 반응형 레이아웃 설계로 다양한 디바이스 대응",
+      "직접 수행한 프로젝트들을 정리하고, 기술 스택과 성과를 명확히 시각화"
+    ],
+    tech: ["React", "TypeScript", "Tailwind"],
+    reason:
+      `이력서나 정적인 PDF 대신, 실제 작업물을 담은 인터랙티브한 포트폴리오가 더 효과적인 커뮤니케이션 수단이라고 판단했습니다.
+      자신의 기술 스택과 UI/UX 감각을 보여주기 위한 용도로 직접 제작하였습니다.`,
+    learned:
+      `모던 프론트엔드 개발의 전반적인 흐름을 정리하면서, 사용자 경험을 고려한 인터랙션 구성과 코드 구조화의 중요성을 체감했습니다.
+      애니메이션, 라우팅, 상태 관리 등을 종합적으로 조율하는 UI 설계 경험을 쌓을 수 있었습니다.`,
+    screenshots: [
+      "/images/life-sync-1.png",
+      "/images/life-sync-2.gif"
+    ],
+    demo: "https://sung-portfolio-chi.vercel.app//",
+    repo: "https://github.com/newmcb/sung-portfolio",
+    type: "Side Project"
   }
 ];
