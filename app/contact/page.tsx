@@ -27,7 +27,7 @@ export default function ContactPage() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1, delay: 0.4 }}
-        href="mailto:your.email@example.com"
+        href="mailto:newmcb@naver.com"
         className="text-sky-400 text-lg underline hover:text-sky-300"
       >
         newmcb@naver.com
