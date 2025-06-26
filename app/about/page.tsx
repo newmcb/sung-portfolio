@@ -79,9 +79,9 @@ export default function AboutPage() {
           <FiBriefcase className="w-6 h-6 mr-2 text-sky-400" />Experience
         </h2>
 
-        <p className="text-sm text-gray-500 mb-6">총 경력기간: {totalDuration}</p>
+        <p className="text-sm text-gray-500 mb-6 pl-8">총 경력기간: {totalDuration}</p>
 
-        <div className="border-l-2 border-gray-200 pl-8 space-y-8">
+        <div className="border-l-4 border-sky-400 pl-4 py-2 mb-4 space-y-8">
           {EXPERIENCE.map(({ date, title, desc }) => {
             const { years, months } = parseDuration(date);
             return (
@@ -110,7 +110,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold border-b border-gray-200 pb-2 mb-6 flex items-center">
           <FiAward className="w-6 h-6 mr-2 text-sky-400" />Certifications
         </h2>
-        <ul className="space-y-4">
+        <ul className="space-y-4 px-8">
           {CERTIFICATIONS.map(({ title, date, issuer, result }) => (
             <li key={title} className="space-y-1">
               <div className="flex justify-between">
@@ -135,7 +135,7 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold border-b border-gray-200 pb-2 mb-6 flex items-center">
           <FiBook className="w-6 h-6 mr-2 text-sky-400" />Education
         </h2>
-        <ul className="space-y-4">
+        <ul className="space-y-4 pl-8" >
           {EDUCATION.map(({ institution, degree, period, note }) => (
             <li key={institution} className="space-y-1">
               <h3 className="text-lg font-medium">{degree}</h3>
