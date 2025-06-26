@@ -89,20 +89,20 @@ export default function ProjectDetailPage() {
         </Section>
       )}
 
-      {Array.isArray(project.screenshots) && project.screenshots.length > 0 && (
-        <Section icon="🖼️" title="프로젝트 화면">
-          <div className="grid gap-4 sm:grid-cols-2">
-            {project.screenshots.map((src, i) => (
-              <img
-                key={i}
-                src={src}
-                alt={`screenshot-${i}`}
-                className="rounded-lg border border-[#333] w-full object-cover"
-              />
-            ))}
-          </div>
-        </Section>
-      )}
+      {/*{Array.isArray(project.screenshots) && project.screenshots.length > 0 && (*/}
+      {/*  <Section icon="🖼️" title="프로젝트 화면">*/}
+      {/*    <div className="grid gap-4 sm:grid-cols-2">*/}
+      {/*      {project.screenshots.map((src, i) => (*/}
+      {/*        <img*/}
+      {/*          key={i}*/}
+      {/*          src={src}*/}
+      {/*          alt={`screenshot-${i}`}*/}
+      {/*          className="rounded-lg border border-[#333] w-full object-cover"*/}
+      {/*        />*/}
+      {/*      ))}*/}
+      {/*    </div>*/}
+      {/*  </Section>*/}
+      {/*)}*/}
 
       {project.learned && (
         <Section icon="📘" title="배운 점">

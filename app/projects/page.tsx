@@ -19,10 +19,13 @@ export default function ProjectsPage() {
       <div className="grid gap-8">
         {projects.map((project, i) => (
           <Link key={i} href={`/projects/${project.slug}`}>
-            <motion.div
+            <motion.section
+              initial={{opacity: 0, y: 20}}
+              animate={{opacity: 1, y: 0}}
+              transition={{duration: 0.6, delay: i * 0.2}}
               whileHover={{scale: 1.02}}
               whileTap={{scale: 0.98}}
-              className="block border border-[#333] rounded-xl p-6 hover:border-sky-400"
+              className="block border rounded-xl p-6 hover:border-sky-400"
             >
               <div className="flex items-center justify-between mb-3">
                 <h2 className="text-2xl font-bold tracking-tight">{project.title}</h2>
@@ -55,7 +58,7 @@ export default function ProjectsPage() {
                   </span>
                 ))}
               </div>
-            </motion.div>
+            </motion.section>
 
           </Link>
         ))}
