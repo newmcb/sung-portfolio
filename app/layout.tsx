@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import {Analytics} from "@vercel/analytics/next";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <body className="transition-colors duration-500">
       <Header />
         <main className="pt-20">{children}</main>
+        <Analytics/>
       <Footer />
     </body>
     </html>
