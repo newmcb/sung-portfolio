@@ -10,6 +10,20 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
   title: "Sung Portfolio",
   description: "Frontend Developer Sung Portfolio",
+  openGraph: {
+    title: "Sung Portfolio",
+    description:
+      "Frontend Developer Sung Portfolio",
+    url: "https://sung-portfolio-chi.vercel.app/",
+    type: "website",
+    images: [
+      {
+        url: "https://placehold.co/1200x630/ffffff/000000?text=Sung+Portfolio",
+        width: 1200,
+        height: 630,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
