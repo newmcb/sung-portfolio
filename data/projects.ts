@@ -27,7 +27,7 @@ export const projects: Project[] = [
       `시중의 가계부는 유료이거나 기능이 분산되어 있어 불편했습니다. 
       일정과 메모도 다른 앱에서 관리하는 불편함을 느껴, 나만의 워크플로우에 최적화된 도구를 직접 만들게 되었습니다.`,
     learned:
-      "React 상태 관리 전략(Recoil, Context 등)을 실제로 적용하며 경험을 쌓을 수 있었고, 사용자 관점에서 어떤 흐름이 효율적인지 고민하게 되었습니다.",
+      "FSD 아키텍처 적용과 Zustand, React Query, Tailwind CSS를 활용해 프로젝트를 구현하며 기술적 경험을 쌓았습니다.",
     screenshots: [
       "/images/life-sync-1.png",
       "/images/life-sync-2.gif"
